@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Gary Cole",
+        "image":"",
+        "phone": "303-432-2222",
+        "email": "Cole.Gary@gmail.com",
+        "dob": "04/05/1960"
+    },
+    {
+        "id": 2,
+        "name": "Katy Kate",
+        "image":"",
+        "phone": "303-555-2134",
+        "email": "KK24@yahoo.com",
+        "dob": "12/25/1985"
+    },
+    {
+        "id": 3,
+        "name": "Tim Scott",
+        "image":"",
+        "phone": "500-334-3952",
+        "email": "TimS1973@gmail.com",
+        "dob": "08/07/1973"
+    },
+    {
+        "id": 4,
+        "name": "Michelle Alexander",
+        "image":"",
+        "phone": "760-302-3333",
+        "email": "AlexanderMic@centurylink.com",
+        "dob": "06/30/1990"
+    },
+    {
+        "id": 5,
+        "name": "Justin Stam",
+        "image":"",
+        "phone": "890-383-2992",
+        "email": "Justin1234@gmail.com",
+        "dob": "10/31/1979"
+    },
+    {
+        "id": 6,
+        "name": "Lindsay Meeks",
+        "image":"",
+        "phone": "303-771-2588",
+        "email": "Meekster31@yahoo.com",
+        "dob": "02/03/1993"
+    },
+    {
+        "id": 7,
+        "name": "Kyle Lions",
+        "image":"",
+        "phone": "293-333-3333",
+        "email": "KingLions42@gmail.com",
+        "dob": "09/14/1956"
+    },
+    {
+        "id": 8,
+        "name": "Ashton Russel",
+        "image":"",
+        "phone": "720-221-2738",
+        "email": "AshRus2930@yahoo.com",
+        "dob": "08/05/1980"
+    },
+    {
+        "id": 9,
+        "name": "Liza Blake",
+        "image":"",
+        "phone": "308-307-9999",
+        "email": "BlakeLizaK@hotmail.com",
+        "dob": "11/25/1978"
+    },
+    {
+        "id": 10,
+        "name": "Gina Lars",
+        "image":"",
+        "phone": "303-555-7920",
+        "email": "LarsGina@gmail.com",
+        "dob": "01/15/1995"
+    }
+]
