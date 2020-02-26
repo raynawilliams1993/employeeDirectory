@@ -1,16 +1,18 @@
-import React from "react";
-// import "./style.css";
+import React from 'react';
+import { Jumbotron, Container } from 'reactstrap';
+import "./style.css"
 
-function Jumbotron() {
+const Example = (props) => {
   return (
-    <div class="jumbotron">
-      <h1 class="display-4">Search for an Employee!!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4" />
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
-  )
+    <div>
+      <Jumbotron fluid>
+        <Container fluid>
+          <h1 className="display-3">Employee Directory System</h1>
 
-}
-export default Jumbotron;
+        </Container>
+      </Jumbotron>
+    </div>
+  );
+};
+
+export default Example;

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import EmployeeCard from "./Components/EmployeeCard";
 import Jumbotron from "./Components/Jumbotron";
 import Searchbar from "./Components/Searchbar";
+import EmployeeTable from "./Components/Table/EmployeeTable"
 import employees from "./Components/employees.json";
+// import EmployeeTable from "./Components/Table/EmployeeTable";
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -26,7 +27,7 @@ class App extends Component {
         <Jumbotron>Employees List</Jumbotron>
         <Searchbar>Search an Employee</Searchbar>
         {this.state.employees.map(employee => (
-          <EmployeeCard
+          <EmployeeTable
             removeFriend={this.removeEmployee}
             id={employee.id}
             key={employee.id}
