@@ -16,14 +16,19 @@ const EmployeeTable = (props) => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">{props.id}</th>
-          <td>{props.name}</td>
-          <td>{props.image}</td>
-          <td>{props.phone}</td>
-          <td>{props.dob}</td>
-          <td>{props.email}</td>
+        {props.employees.map(employee => (
+        <tr key={employee.id}>
+          <th scope="row">{employee.id}</th>
+          <td>{employee.name}</td>
+          <td>
+            <img src={employee.image} alt="emp"/>
+            </td>
+          <td>{employee.phone}</td>
+          <td>{employee.dob}</td>
+          <td>{employee.email}</td>
         </tr>
+          
+        ))}
       </tbody>
     </Table>
   );

@@ -10,7 +10,8 @@ import employees from "./Components/employees.json"
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    employees: employees
+    employees: employees,
+    search: ""
   };
   componentDidMount = () => {
     console.log(employees)
@@ -22,13 +23,36 @@ class App extends Component {
     this.setState({ employees });
   };
 
+  handleFormSubmit = () => {
+      if (this.state.search == "") {
+      this.setState({ employees: employees })
+    } else {
+      const filterTable = employees.filter(emp => emp.id == this.state.search)
+      this.setState({ employees: filterTable })
+    }
+  };
+
+  handleInputChange = event => {
+    console.log(event.target.value);
+    this.setState({ search: event.target.value })
+  }
+
+
+
   // Map over this.state.employees and render a EmployeeCard component for each employee object
   render = () => {
     return (
       <div>
         <Jumbotron>Employees List</Jumbotron>
-        <Searchbar>Search an Employee</Searchbar>
-        {this.state.employees.map(employee => (
+        <Searchbar
+          search={this.state.search}
+          handleFormSubmit={this.handleFormSubmit}
+          handleInputChange={this.handleInputChange}
+        />
+        <EmployeeTable
+          employees={this.state.employees}
+        />
+        {/* {this.state.employees.map(employee => (
 
           <EmployeeTable
             removeFriend={this.removeEmployee}
@@ -41,7 +65,7 @@ class App extends Component {
             email={employee.email}
           />
 
-        ))}
+        ))} */}
       </div>
     );
   }
