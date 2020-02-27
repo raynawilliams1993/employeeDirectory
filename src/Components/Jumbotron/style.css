@@ -1,5 +1,10 @@
-Jumbotron-text{
-background-color: seagreen;
-text-align: center;
-font-size: larger;
+h1{
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:lavender;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    
+    
 }
