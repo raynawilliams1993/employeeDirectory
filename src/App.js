@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Jumbotron from "./Components/Jumbotron";
 import Searchbar from "./Components/Searchbar";
 import EmployeeTable from "./Components/Table/EmployeeTable"
-import employees from "./Components/employees.json";
+import employees from "./Components/employees.json"
+
+
 // import EmployeeTable from "./Components/Table/EmployeeTable";
 
 class App extends Component {
@@ -10,9 +12,9 @@ class App extends Component {
   state = {
     employees: employees
   };
-    componentDidMount =() => {
-      console.log(employees)
-    }
+  componentDidMount = () => {
+    console.log(employees)
+  }
   removeEmployee = id => {
     // Filter this.state.employees for employees with an id not equal to the id being removed
     const employees = this.state.employees.filter(employee => employee.id !== id);
@@ -21,12 +23,13 @@ class App extends Component {
   };
 
   // Map over this.state.employees and render a EmployeeCard component for each employee object
-  render=() => {
+  render = () => {
     return (
       <div>
         <Jumbotron>Employees List</Jumbotron>
         <Searchbar>Search an Employee</Searchbar>
         {this.state.employees.map(employee => (
+
           <EmployeeTable
             removeFriend={this.removeEmployee}
             id={employee.id}
@@ -37,6 +40,7 @@ class App extends Component {
             dob={employee.dob}
             email={employee.email}
           />
+
         ))}
       </div>
     );
